@@ -157,8 +157,9 @@
     else
     [self.storeController purchaseProduct:self.productIdentifier];
 }
+}
 
-- (IBAction)purchaseFromAppStoreButtonPressed:(id)sender 
+- (IBAction)purchaseFromAppStoreButtonPressed:(id)sender
 {
     UIApplication *app = [UIApplication sharedApplication];
     [app openURL:self.storeProduct.appStoreURL];
